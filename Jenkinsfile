@@ -11,19 +11,19 @@ pipeline{
      stage('Build'){
       steps{
         sh ''
-        docker build -t nodeapp:${BUILD_NUMBER}
+        docker build -t nodeapp:node
       }
      }
      stage('Test'){
         steps{
           sh ''
-          docker run -it nodeapp:$(BUILD_NUMBER)
+          docker run -it nodeapp:node
       }
      }
       stage('Package'){
         steps{
           sh ''
-          docker push yashpimple22/nodeapp:$(BUILD_NUMBER)
+          docker push yashpimple22/nodeapp:node
           '''
       }
      }
