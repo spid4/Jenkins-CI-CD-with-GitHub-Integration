@@ -4,8 +4,8 @@ pipeline{
   stages{
     stage('Clone'){
       steps {
-        git branch: 'master'
-        url: '"
+        git branch: 'main'
+        url: 'https://github.com/spid4/Jenkins-CI-CD-with-GitHub-Integration.git'
       }
     }
      stage('Build'){
