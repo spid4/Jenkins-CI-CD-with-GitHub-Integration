@@ -11,19 +11,19 @@ pipeline{
      stage('Build'){
       steps{
         sh ''
-        docker build -t nodeapp:node
+          docker build . -t node-app-todo
       }
      }
      stage('Test'){
         steps{
           sh ''
-          docker run -it nodeapp:node
+          docker run -d -p 8000:8000 node-app-todo
       }
      }
       stage('Package'){
         steps{
           sh ''
-          docker push yashpimple22/nodeapp:node
+          docker push yashpimple22/nodeapp
           '''
       }
      }
