@@ -11,7 +11,7 @@ pipeline{
      stage('Build'){
       steps{
         sh ''
-          docker build . -t node-app-todo
+          docker build . 
       }
      }
      stage('Test'){
