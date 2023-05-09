@@ -6,7 +6,7 @@ sudo apt -y install npm
 node -v
 
 #Install pm2 pacakege
-sudo npm install /Jenkins-CI-CD-with-GitHub-Integration
+sudo npm install /Jenkins-CI-CD-with-GitHub-Integration/package.json
 sudo npm i -g pm2
 
 #Starting our nodejs app 
