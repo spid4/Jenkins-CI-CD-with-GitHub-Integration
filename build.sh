@@ -10,4 +10,4 @@ sudo npm install
 sudo npm i -g pm2
 
 #Starting our nodejs app 
-sudo pm2 $1 app.js --name "todo"
+sudo pm2 start app.js --name "todo"
