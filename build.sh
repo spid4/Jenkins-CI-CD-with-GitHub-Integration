@@ -1,9 +1,9 @@
 #!/bin/bash
 #Installing node 16 on ubuntu 
-#cd ~
-#curl -sL https://deb.nodesource.com/setup_16.x | sudo bash -
-#sudo apt -y install npm
-#node v
+cd ~
+curl -sL https://deb.nodesource.com/setup_16.x | sudo bash -
+sudo apt -y install npm
+node -v
 
 #Install pm2 pacakege
 sudo npm install /Jenkins-CI-CD-with-GitHub-Integration
