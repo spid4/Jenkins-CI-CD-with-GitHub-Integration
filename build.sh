@@ -6,7 +6,7 @@
 #node v
 
 #Install pm2 pacakege
-sudo npm install
+sudo npm install /Jenkins-CI-CD-with-GitHub-Integration
 sudo npm i -g pm2
 
 #Starting our nodejs app 
